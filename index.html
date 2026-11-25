@@ -78,36 +78,36 @@
 <body>
 <div class="wrap">
 
-  <p class="pill">Apple Health · Oct 23 – Nov 21, 2026</p>
+  <p class="pill">Apple Health · Oct 28 – Nov 23, 2026</p>
   <h1>Health Dashboard</h1>
-  <p class="sub">Four weeks of Apple Health data, plus your food log (Nov 10–21). Last updated Sunday, Nov 22, 2026 — Nov 22 is still in progress, so trends use complete days through Nov 21; Nov 21 itself is a partial sync day.</p>
+  <p class="sub">Four weeks of Apple Health data, plus your food log (Nov 10–24). Last updated Wednesday, Nov 25, 2026 — trends use complete days through Nov 23; Nov 24 is a partial sync day and Nov 25 hasn't synced yet.</p>
 
   <!-- KPI ROW -->
   <div class="kpis">
     <div class="kpi">
-      <div class="label">Weight — latest (Nov 21)</div>
+      <div class="label">Weight — latest (Nov 23)</div>
       <div class="value">257.9 <small>lb</small></div>
-      <div class="delta good">▼ 1.8 lb since Oct 23 (259.7 lb)</div>
+      <div class="delta good">New window low 256.3 lb on Nov 22</div>
     </div>
     <div class="kpi">
       <div class="label">Steps — last 7 days avg</div>
-      <div class="value">5,052 <small>/day</small></div>
-      <div class="delta warn">▼ from 5,435/day the week before</div>
+      <div class="value">5,426 <small>/day</small></div>
+      <div class="delta good">▲ from 5,031/day the week before</div>
     </div>
     <div class="kpi">
       <div class="label">Calories eaten — last 7 days avg</div>
-      <div class="value">1,854 <small>kcal</small></div>
-      <div class="delta good">146 under your 2,000 target · 12 days logged</div>
+      <div class="value">1,959 <small>kcal</small></div>
+      <div class="delta good">41 under your 2,000 target · 15 days logged (Nov 10–24)</div>
     </div>
     <div class="kpi">
       <div class="label">Resting heart rate</div>
-      <div class="value">55 <small>bpm avg</small></div>
-      <div class="delta">Steady — 4-week avg 53.4, last 7 days 54.8</div>
+      <div class="value">54.7 <small>bpm avg</small></div>
+      <div class="delta">Steady — 4-week average 53.8 bpm</div>
     </div>
     <div class="kpi">
       <div class="label">Active energy</div>
-      <div class="value">~466 <small>kcal/day</small></div>
-      <div class="delta">Plus ~2,171 kcal/day resting burn (complete days Nov 15–20)</div>
+      <div class="value">488 <small>kcal/day</small></div>
+      <div class="delta">Plus ~2,164 kcal/day resting burn (last 7 days, Nov 17–23)</div>
     </div>
   </div>
 
@@ -115,12 +115,15 @@
   <section>
     <div class="panel">
       <h2>Weight goal — 240 lb by March 10, 2027</h2>
-      <p class="sec-note">You started calorie counting Nov 10 at about 259 lb (Apple Health). Latest reading: 257.9 lb on Nov 21 (Nov 20's 256.6 lb is still the low).</p>
+      <p class="sec-note">You started calorie counting Nov 10 at about 259 lb (Apple Health). Latest reading: 257.9 lb on Nov 23, with a new window low of 256.3 lb on Nov 22 (Nov 20's 256.6 lb is now second-lowest).</p>
       <div class="goalbar"><div style="width:6%"></div></div>
       <div class="goal-meta">
         <span>Start ≈ 259 lb</span><span><strong>Now 257.9 lb</strong> — 1.1 lb of 19 lb</span><span>Goal 240 lb</span>
       </div>
-      <p style="margin:12px 0 0;font-size:14.5px">Over the four-week window you're down about <strong>2.1 lb</strong> on weekly averages (259.9 → 257.8 lb), and the weekly averages are trending down (259.9 → 260.1 → 257.7 → 257.8 lb). But the recent pace — about <strong>0.7 lb per week</strong> — is slightly behind the roughly <strong>1.15 lb per week</strong> needed to cover the remaining 17.9 lb in the ~15.6 weeks (109 days) to Mar 10. Day-to-day readings bounce ±2 lb, so judge it by the weekly average, not single mornings.</p>
+      <p style="margin:12px 0 0;font-size:14.5px">Weekly averages stepped down and then flattened: <strong>260.1 → 259.6 → 257.5 → 257.5 lb</strong> across the four stretches of this window. The recent pace — Nov 10's 259.4 lb to Nov 23's 257.9 lb — is about <strong>0.8 lb per week</strong>, slightly behind the roughly <strong>1.19 lb per week</strong> needed to cover the remaining 17.9 lb in the 105 days to Mar 10. Day-to-day readings bounce ±2 lb, so judge it by the weekly average, not single mornings.</p>
+      <h3 style="font-size:16px;margin:20px 0 4px">Daily weight readings</h3>
+      <p class="sec-note">Readings on 23 of the 27 days, Oct 28 – Nov 23 (none on Nov 1, 2, 8 or 9). Hover a point for the exact reading.</p>
+      <div id="weightChart"></div>
     </div>
   </section>
 
@@ -128,9 +131,9 @@
   <section>
     <div class="panel">
       <h2>Steps — daily, last 4 weeks</h2>
-      <p class="sec-note">Bars are daily step counts (Oct 23 – Nov 21). The line is the 7-day average. Nov 3, Nov 13 and Nov 21 were partial sync days — their low bars are missing data, not rest days. Nov 15 (2,991) and Nov 18 (3,606) were genuinely low-step days with complete sync. Nov 22 (43 steps so far, day in progress) isn't charted.</p>
+      <p class="sec-note">Bars are daily step counts (Oct 28 – Nov 23). The line is the 7-day average. Nov 3 and Nov 13 were partial sync days — their low bars are missing data, not rest days. Nov 15 (2,855) and Nov 18 (3,606) were genuinely low-step days with complete sync. Nov 24 (2,498 steps so far) is a partial sync day and isn't charted.</p>
       <div id="stepsChart"></div>
-      <div class="legend"><span><span class="sw" style="background:var(--green)"></span>Daily steps</span><span><span class="sw" style="background:var(--green);opacity:.38"></span>Partial sync day (Nov 3, Nov 13, Nov 21)</span><span><span class="sw" style="background:var(--amber)"></span>7-day average</span></div>
+      <div class="legend"><span><span class="sw" style="background:var(--green)"></span>Daily steps</span><span><span class="sw" style="background:var(--green);opacity:.38"></span>Partial sync day (Nov 3, Nov 13)</span><span><span class="sw" style="background:var(--amber)"></span>7-day average</span></div>
     </div>
   </section>
 
@@ -138,18 +141,18 @@
   <section>
     <div class="grid2">
       <div class="panel">
-        <h2>Calories in — food log, Nov 10–21</h2>
-        <p class="sec-note">From your photo food log. Estimates run ±20–30%. Dashed line is your 2,000 kcal target. Nov 22 not started yet, not charted.</p>
+        <h2>Calories in — food log, Nov 10–24</h2>
+        <p class="sec-note">From your photo food log. Estimates run ±20–30%. Dashed line is your 2,000 kcal target.</p>
         <div id="calChart"></div>
-        <div class="legend"><span><span class="sw" style="background:var(--green)"></span>Under target (8 days)</span><span><span class="sw" style="background:var(--amber)"></span>Over target (4 days)</span></div>
-        <p style="font-size:14.5px;margin:12px 0 0">The over-target days: <strong>Nov 11 (2,485)</strong> — the Reuben + onion rings lunch did most of it — <strong>Nov 15 (2,095)</strong>, <strong>Nov 17 (2,030)</strong>, just 30 over, and <strong>Nov 21 (2,075)</strong>, a big pancake breakfast (875) plus two glasses of wine. Your best day was Nov 16 at 1,340. Eight of the twelve complete days came in under target.</p>
+        <div class="legend"><span><span class="sw" style="background:var(--green)"></span>Under target (8 days)</span><span><span class="sw" style="background:var(--amber)"></span>Over target (7 days)</span></div>
+        <p style="font-size:14.5px;margin:12px 0 0">The over-target days: <strong>Nov 11 (2,485)</strong> — the Reuben + onion rings lunch did most of it — <strong>Nov 15 (2,095)</strong>, <strong>Nov 17 (2,030)</strong>, just 30 over, <strong>Nov 21 (2,075)</strong>, a big pancake breakfast (875) plus two glasses of wine, and <strong>Nov 22 (2,175)</strong>. The last three days each landed barely over: Nov 23 by 25 kcal and Nov 24 by just 5. Your best day was Nov 16 at 1,340. Eight of the fifteen days came in under target, and the 15-day average is 1,894 kcal/day.</p>
       </div>
       <div class="panel">
         <h2>Calories out — Apple Health burn</h2>
-        <p class="sec-note">Total daily burn (resting + active) vs. what you ate, per day. Nov 13 and Nov 21 have no burn bar — they were partial sync days.</p>
+        <p class="sec-note">Total daily burn (resting + active) vs. what you ate, per day, Nov 10–23. Nov 13 has no burn bar — it was a partial sync day. Nov 24 isn't shown: its Health data is partial-sync only.</p>
         <div id="burnChart"></div>
         <div class="legend"><span><span class="sw" style="background:var(--blue)"></span>Burned (resting + active)</span><span><span class="sw" style="background:var(--amber)"></span>Eaten</span></div>
-        <p style="font-size:14.5px;margin:12px 0 0">On the 10 complete logged days (Nov 10–20, excluding partial Nov 13), intake averaged about <strong>1,840 kcal/day</strong> against an average total burn of about <strong>2,573 kcal/day</strong> — an estimated deficit around <strong>730 kcal/day</strong>. Treat that as an estimate, not a fact: photo calories are photo estimates running ±20–30%, and the scale is losing more slowly than a 730 kcal/day deficit would predict.</p>
+        <p style="font-size:14.5px;margin:12px 0 0">On the 13 complete days (Nov 10–23, excluding partial Nov 13), intake averaged about <strong>1,898 kcal/day</strong> against an average total burn of about <strong>2,564 kcal/day</strong> — an estimated deficit around <strong>666 kcal/day</strong>. Treat that as an estimate, not a fact: photo calories are photo estimates running ±20–30%, and the scale is losing more slowly than a 666 kcal/day deficit would predict.</p>
       </div>
     </div>
   </section>
@@ -158,20 +161,20 @@
   <section>
     <div class="panel">
       <h2>Weekly trends</h2>
-      <p class="sec-note">Steps, distance and active energy are weekly daily averages (weeks start Monday). Weight averages use the weigh-in stretches given in the brief: Oct 23–29, Oct 30–Nov 5, Nov 6–12, Nov 13–19 and Nov 15–21.</p>
+      <p class="sec-note">Steps and active energy are weekly daily averages (weeks start Monday). Weight averages use the stretches Oct 28–Nov 3, Nov 4–10, Nov 11–17 and Nov 18–23.</p>
       <div class="tblwrap">
       <table class="weekly">
-        <thead><tr><th>Week of</th><th>Steps / day</th><th>Distance / day</th><th>Active kcal / day</th><th>Avg weight</th><th>Resting HR</th></tr></thead>
+        <thead><tr><th>Week of</th><th>Steps / day</th><th>Active kcal / day</th><th>Avg weight</th><th>Resting HR</th></tr></thead>
         <tbody>
-          <tr><td>Oct 19</td><td>6,147</td><td>2.9 mi</td><td>510*</td><td>260.1 lb†</td><td>54 bpm</td></tr>
-          <tr><td>Oct 26</td><td>6,111</td><td>2.8 mi</td><td>527</td><td>260.1 lb†</td><td>53 bpm</td></tr>
-          <tr><td>Nov 2</td><td>5,018</td><td>2.2 mi</td><td>472*</td><td>258.7 lb†</td><td>54 bpm</td></tr>
-          <tr><td>Nov 9</td><td>5,040</td><td>2.2 mi</td><td>417*</td><td>257.7 lb†</td><td>53 bpm</td></tr>
-          <tr><td>Nov 16‡</td><td>5,395</td><td>2.3 mi</td><td>485</td><td>257.8 lb†</td><td>55 bpm</td></tr>
+          <tr><td>Oct 26</td><td>5,999</td><td>515</td><td>260.1 lb†</td><td>53 bpm</td></tr>
+          <tr><td>Nov 2</td><td>5,018</td><td>472*</td><td>259.6 lb†</td><td>54 bpm</td></tr>
+          <tr><td>Nov 9</td><td>5,021</td><td>414*</td><td>257.5 lb†</td><td>53 bpm</td></tr>
+          <tr><td>Nov 16</td><td>5,277</td><td>482</td><td>257.5 lb†</td><td>55 bpm</td></tr>
+          <tr><td>Nov 23‡</td><td>6,514</td><td>623</td><td>257.9 lb</td><td>55 bpm</td></tr>
         </tbody>
       </table>
       </div>
-      <p style="font-size:13px;color:var(--muted);margin:10px 0 0">* Active averages exclude the partial-sync days (Nov 3 in the Nov 2 week, Nov 13 in the Nov 9 week), which have no active-energy record; the Oct 19 week covers Oct 22–25 only. The Nov 16 week covers Nov 16–21 only. † Weight averages are for the stretches Oct 23–29, Oct 30–Nov 5, Nov 6–12, Nov 13–19 and Nov 15–21 respectively, which don't align exactly with the Monday-start weeks. ‡ Nov 16 week is through Nov 21 (week incomplete; Nov 21 is a partial sync day).</p>
+      <p style="font-size:13px;color:var(--muted);margin:10px 0 0">* Active averages exclude the partial-sync days (Nov 3 in the Nov 2 week, Nov 13 in the Nov 9 week), which have no active-energy record. The Oct 26 week covers Oct 28–Nov 1 only (the window starts Oct 28). † Weight averages are for the stretches Oct 28–Nov 3, Nov 4–10, Nov 11–17 and Nov 18–23 respectively, which don't align exactly with the Monday-start weeks. ‡ The Nov 23 week covers Nov 23 only so far; its weight figure is that day's single reading.</p>
     </div>
   </section>
 
@@ -180,35 +183,35 @@
     <div class="grid2">
       <div class="panel">
         <h2>Heart &amp; recovery</h2>
-        <p class="sec-note">Averages across Oct 23 – Nov 21, from Apple Health.</p>
+        <p class="sec-note">Averages across Oct 28 – Nov 23, from Apple Health.</p>
         <table style="min-width:0">
           <tbody>
-            <tr><td style="text-align:left">Resting heart rate</td><td><strong>53 bpm</strong> avg (last 7 days 54.8)</td></tr>
-            <tr><td style="text-align:left">Heart rate variability</td><td><strong>~24 ms</strong> (last 7 days 22.4)</td></tr>
-            <tr><td style="text-align:left">Exercise minutes</td><td><strong>~29 min/day</strong> (last 7 days 25.7)</td></tr>
-            <tr><td style="text-align:left">Walking / running distance</td><td><strong>3.53 km/day</strong> — last 7 days</td></tr>
+            <tr><td style="text-align:left">Resting heart rate</td><td><strong>53.8 bpm</strong> avg (last 7 days 54.7)</td></tr>
+            <tr><td style="text-align:left">Heart rate variability</td><td><strong>24.4 ms</strong> avg (last 7 days 23.8)</td></tr>
+            <tr><td style="text-align:left">Exercise minutes</td><td><strong>~28 min/day</strong> (last 7 days 28.1)</td></tr>
+            <tr><td style="text-align:left">Active energy</td><td><strong>488 kcal/day</strong> — last 7 days</td></tr>
           </tbody>
         </table>
-        <p style="font-size:14.5px;margin:12px 0 0">Resting heart rate is steady — a 4-week average of 53.4 bpm, with the last 7 days at 54.8 — and HRV is holding around 24 ms. Blood pressure has its own section below, and sleep follows it.</p>
+        <p style="font-size:14.5px;margin:12px 0 0">Resting heart rate is steady — a 4-week average of 53.8 bpm, with the last 7 days at 54.7 (Nov 21 has no resting-HR reading) — and HRV is holding around 24 ms. Blood pressure has its own section below, and sleep follows it.</p>
       </div>
       <div class="panel">
         <h2>Last 7 days at a glance</h2>
-        <p class="sec-note">Nov 15–21, Apple Health + food log. Burned is total burn (resting + active).</p>
+        <p class="sec-note">Nov 17–23, Apple Health + food log (food log runs through Nov 24). Burned is total burn (resting + active).</p>
         <div class="tblwrap">
         <table style="min-width:0">
           <thead><tr><th>Day</th><th>Steps</th><th>Burned</th><th>Eaten</th></tr></thead>
           <tbody>
-            <tr><td>Sun Nov 15</td><td>2,991</td><td>2,382</td><td>2,095</td></tr>
-            <tr><td>Mon Nov 16</td><td>5,487</td><td>2,878</td><td>1,340</td></tr>
-            <tr><td>Tue Nov 17</td><td>6,523</td><td>2,936</td><td>2,030</td></tr>
-            <tr><td>Wed Nov 18</td><td>3,606</td><td>2,586</td><td>1,650</td></tr>
+            <tr><td>Tue Nov 17</td><td>6,244</td><td>2,749</td><td>2,030</td></tr>
+            <tr><td>Wed Nov 18</td><td>3,606</td><td>2,585</td><td>1,650</td></tr>
             <tr><td>Thu Nov 19</td><td>4,915</td><td>2,526</td><td>1,900</td></tr>
             <tr><td>Fri Nov 20</td><td>6,484</td><td>2,671</td><td>1,885</td></tr>
-            <tr><td>Sat Nov 21</td><td>5,356†</td><td>—†</td><td>2,075</td></tr>
+            <tr><td>Sat Nov 21</td><td>5,313</td><td>2,403</td><td>2,075</td></tr>
+            <tr><td>Sun Nov 22</td><td>4,903</td><td>2,710</td><td>2,175</td></tr>
+            <tr><td>Mon Nov 23</td><td>6,514</td><td>2,922</td><td>2,025</td></tr>
           </tbody>
         </table>
         </div>
-        <p style="font-size:13px;color:var(--muted);margin:10px 0 0">† Partial sync day (42 of 48 records; basal only 1,145 kcal so far, no resting heart rate recorded) — treat burn as incomplete, not a rest day; steps may still rise slightly. Nov 15 and Nov 18 were genuinely low-step days with complete sync.</p>
+        <p style="font-size:13px;color:var(--muted);margin:10px 0 0">Nov 21's step and energy data are complete — only its resting heart rate is missing. Nov 18 (3,606) was a genuinely low-step day with complete sync. Nov 24 is a partial sync day (2,498 steps, basal 1,513 kcal so far) and isn't included in any average.</p>
       </div>
     </div>
   </section>
@@ -222,12 +225,12 @@
       <table style="min-width:0">
         <tbody>
           <tr><td style="text-align:left">Latest reading</td><td><strong>149.5/89.5</strong> — Nov 20</td></tr>
-          <tr><td style="text-align:left">Last 7 days</td><td><strong>149.5/89.5</strong> (the only reading in the last 7 days)</td></tr>
+          <tr><td style="text-align:left">New readings since Nov 20</td><td><strong>None</strong> — still 5 readings total</td></tr>
           <tr><td style="text-align:left">Average of all readings</td><td><strong>~126/79</strong> (5 readings)</td></tr>
         </tbody>
       </table>
       </div>
-      <p style="font-size:14.5px;margin:12px 0 0">The Nov 20 reading of <strong>149.5/89.5</strong> is the highest of the five and sits well above your recent ~118–121 range. It's a single day's reading, not a trend yet — worth re-checking with another reading or two before reading anything into it. No follow-up reading has synced yet.</p>
+      <p style="font-size:14.5px;margin:12px 0 0">The Nov 20 reading of <strong>149.5/89.5</strong> is the highest of the five and sits well above your recent ~118–121 range. It's a single reading, not a trend — a resting re-check is still awaited, and no follow-up reading has synced yet.</p>
       <div id="bpChart" style="margin-top:14px"></div>
       <div class="legend"><span><span class="sw" style="background:var(--blue)"></span>Systolic</span><span><span class="sw" style="background:var(--green)"></span>Diastolic</span></div>
     </div>
@@ -284,50 +287,59 @@
     <div class="insights">
       <div class="insight amber">
         <h3>Weight is down, but slightly behind goal pace</h3>
-        <p>Down about 2.1 lb on weekly averages (259.9 → 257.8 lb), latest reading 257.9 lb on Nov 21 after a 256.6 lb low on Nov 20. At ~0.7 lb/week you're a bit behind the ~1.15 lb/week needed to reach 240 lb by March 10.</p>
-      </div>
-      <div class="insight amber">
-        <h3>Steps up from last week's dip</h3>
-        <p>The last 7 complete days averaged 5,052 steps/day, up from 4,775 in the previous build's window but down from 5,435 the week before (Nov 8–14) — against a 4-week average of 5,431. Nov 15 (2,991) and Nov 18 (3,606) were genuinely quiet days with complete sync, not missing data.</p>
+        <p>Weekly averages fell from 260.1 to 257.5 lb and then flattened (257.5 → 257.5). Latest reading 257.9 lb on Nov 23, after a new window low of 256.3 lb on Nov 22. At ~0.8 lb/week recently you're a bit behind the ~1.19 lb/week needed to reach 240 lb by March 10.</p>
       </div>
       <div class="insight">
-        <h3>Eating is under target</h3>
-        <p>Calories averaged 1,851/day across the 12 complete logged days (Nov 10–21) — under your 2,000 target — and 8 of those 12 days came in under. The last 7 days averaged 1,854/day.</p>
+        <h3>Steps rebounded this week</h3>
+        <p>The last 7 days averaged 5,426 steps/day, up from 5,031 the week before and above the 4-week average of 5,323. Nov 15 (2,855) and Nov 18 (3,606) were genuinely quiet days with complete sync, not missing data.</p>
       </div>
       <div class="insight amber">
-        <h3>One big meal drives the over-days</h3>
-        <p>The over-target days came from a single large meal, not all-day grazing — the Reuben lunch on Nov 11 alone was ~1,220 kcal, over half the day's target; Nov 21's pancakes (875) plus two wines did the same. Your regular pattern (yogurt breakfast, moderate dinner) is already on-target.</p>
+        <h3>Eating under target overall, but three straight days just over</h3>
+        <p>Calories averaged 1,894/day across the 15 logged days (Nov 10–24) — under your 2,000 target — and 8 of those 15 days came in under. But the last 7 days averaged 1,959/day, and Nov 22–24 each landed just over (2,175, 2,025, 2,005).</p>
+      </div>
+      <div class="insight amber">
+        <h3>One big meal drives the big over-days</h3>
+        <p>The large over-target days came from a single big meal, not all-day grazing — the Reuben lunch on Nov 11 alone was ~1,220 kcal, over half the day's target; Nov 21's pancakes (875) plus two wines did the same. Nov 22–24 were a different pattern: ordinary days landing only slightly high (175, 25 and 5 kcal over).</p>
       </div>
       <div class="insight amber">
         <h3>The deficit is an estimate — and the scale disagrees a little</h3>
-        <p>Logged intake (~1,840/day) vs. estimated total burn (~2,573/day) implies a deficit near 730 kcal/day. But photo estimates run ±20–30%, and weight is coming off more slowly than that deficit would predict — so some calories are likely going uncounted.</p>
+        <p>Logged intake (~1,898/day) vs. estimated total burn (~2,564/day) on the 13 complete days Nov 10–23 implies a deficit near 666 kcal/day. But photo estimates run ±20–30%, and weight is coming off more slowly than that deficit would predict — so some calories are likely going uncounted.</p>
       </div>
       <div class="insight amber">
         <h3>Heart steady; latest blood pressure reading is elevated</h3>
-        <p>Resting HR is holding at ~53–55 bpm (4-week average 53.4; last 7 days 54.8) and HRV around 24 ms. But the newest Omron reading — 149.5/89.5 on Nov 20 — is the highest of the five so far and above your recent ~118–121 range. One reading isn't a trend; it's worth a re-check, and no follow-up reading has synced yet.</p>
+        <p>Resting HR is holding at ~54–55 bpm (4-week average 53.8; last 7 days 54.7) and HRV around 24 ms. But the newest Omron reading — 149.5/89.5 on Nov 20 — is the highest of the five so far and above your recent ~118–121 range. One reading isn't a trend; a resting re-check is still awaited, and no new reading has synced since.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    Sources: Apple Health via Muse sync (daily metrics, Oct 23 – Nov 21, 2026; Nov 22 in progress, Nov 3, Nov 13 &amp; Nov 21 partial sync days; blood pressure from your Omron cuff, 5 readings Oct 23 – Nov 20; 129 sleep sessions, May 30 – Nov 16, 2026 — see the Sleep section above) and your food log files, Nov 10–21, 2026. Weight shown in pounds (Apple Health stores kg). Food calories are photo estimates, ±20–30%. This page is a snapshot from Nov 22, 2026 — ask Muse to rebuild it for fresher data. Not medical advice.
+    Sources: Apple Health via Muse sync (daily metrics, Oct 28 – Nov 23, 2026; Nov 24 partial sync, Nov 3 &amp; Nov 13 partial sync days; blood pressure from your Omron cuff, 5 readings Oct 23 – Nov 20; 129 sleep sessions, May 30 – Nov 16, 2026 — see the Sleep section above) and your food log files, Nov 10–24, 2026. Weight shown in pounds (Apple Health stores kg). Food calories are photo estimates, ±20–30%. This page is a snapshot from Nov 25, 2026 — ask Muse to rebuild it for fresher data. Not medical advice.
   </footer>
 </div>
 
 <script>
-// ---- Baked data (Apple Health daily metrics, Oct 23 – Nov 21, 2026) ----
+// ---- Baked data (Apple Health daily metrics, Oct 28 – Nov 23, 2026) ----
 var stepsData = [
-  ["Oct 23",5830],["Oct 24",6520],["Oct 25",6496],["Oct 26",6337],["Oct 27",6447],
   ["Oct 28",6531],["Oct 29",4523],["Oct 30",5055],["Oct 31",6677],["Nov 1",7210],
   ["Nov 2",5259],["Nov 3",3136],["Nov 4",4863],["Nov 5",5293],["Nov 6",4554],
   ["Nov 7",6272],["Nov 8",5751],["Nov 9",5408],["Nov 10",6139],["Nov 11",5190],
-  ["Nov 12",5729],["Nov 13",4053],["Nov 14",5772],["Nov 15",2991],["Nov 16",5487],
-  ["Nov 17",6523],["Nov 18",3606],["Nov 19",4915],["Nov 20",6484],["Nov 21",5356]
+  ["Nov 12",5729],["Nov 13",4053],["Nov 14",5772],["Nov 15",2855],["Nov 16",5476],
+  ["Nov 17",6244],["Nov 18",3606],["Nov 19",4915],["Nov 20",6484],["Nov 21",5313],
+  ["Nov 22",4903],["Nov 23",6514]
+];
+// Daily weight readings (lb); null = no reading that day
+var weightData = [
+  ["Oct 28",258.5],["Oct 29",261.2],["Oct 30",258.8],["Oct 31",259.9],["Nov 1",null],
+  ["Nov 2",null],["Nov 3",261.9],["Nov 4",260.8],["Nov 5",259.0],["Nov 6",258.3],
+  ["Nov 7",260.3],["Nov 8",null],["Nov 9",null],["Nov 10",259.4],["Nov 11",257.7],
+  ["Nov 12",257.7],["Nov 13",256.8],["Nov 14",256.8],["Nov 15",256.8],["Nov 16",258.3],
+  ["Nov 17",258.3],["Nov 18",258.3],["Nov 19",258.3],["Nov 20",256.6],["Nov 21",257.9],
+  ["Nov 22",256.3],["Nov 23",257.9]
 ];
 var calData = [
   ["Nov 10",1720],["Nov 11",2485],["Nov 12",1400],["Nov 13",1740],["Nov 14",1890],
   ["Nov 15",2095],["Nov 16",1340],["Nov 17",2030],["Nov 18",1650],["Nov 19",1900],
-  ["Nov 20",1885],["Nov 21",2075]
+  ["Nov 20",1885],["Nov 21",2075],["Nov 22",2175],["Nov 23",2025],["Nov 24",2005]
 ];
 // Blood pressure readings (Omron via Apple Health): [date, systolic, diastolic]
 var bpData = [
@@ -341,12 +353,12 @@ var sleepData = [
   ["Sep 21",7.4,7],["Sep 28",7.6,6],["Oct 5",7.8,5],["Oct 12",7.8,5],["Oct 19",7.1,5],
   ["Oct 26",7.7,5],["Nov 2",7.9,5],["Nov 9",7.5,7]
 ];
-// Total burn (resting+active) on the same logged days, from Apple Health.
-// Exact totals from the brief; average over the 10 complete days (Nov 10–20, excl. Nov 13) is 2,573/day.
+// Total burn (basal+active) per day, from Apple Health daily basal + active figures.
+// Average over the 13 complete days (Nov 10–23, excl. Nov 13) is 2,564/day.
 var burnData = [
-  ["Nov 10",2612],["Nov 11",2409],["Nov 12",2485],["Nov 13",null],["Nov 14",2244],
-  ["Nov 15",2382],["Nov 16",2878],["Nov 17",2936],["Nov 18",2586],["Nov 19",2526],
-  ["Nov 20",2671],["Nov 21",null]
+  ["Nov 10",2613],["Nov 11",2409],["Nov 12",2484],["Nov 13",null],["Nov 14",2244],
+  ["Nov 15",2308],["Nov 16",2703],["Nov 17",2749],["Nov 18",2585],["Nov 19",2526],
+  ["Nov 20",2671],["Nov 21",2403],["Nov 22",2710],["Nov 23",2922]
 ];
 
 function cssVar(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
@@ -363,7 +375,7 @@ function cssVar(n){ return getComputedStyle(document.documentElement).getPropert
     s+='<line x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'" stroke="'+grid+'" stroke-width="1"/>';
     s+='<text x="'+(padL-6)+'" y="'+(y+4)+'" text-anchor="end" font-size="11" fill="'+muted+'">'+(g===0?'0':(g/1000)+'k')+'</text>';
   }
-  var partialDays={"Nov 3":1,"Nov 13":1,"Nov 21":1};
+  var partialDays={"Nov 3":1,"Nov 13":1};
   for(var i=0;i<n;i++){
     var v=stepsData[i][1], h=(v/max)*ih;
     var isPartial=!!partialDays[stepsData[i][0]];
@@ -382,6 +394,39 @@ function cssVar(n){ return getComputedStyle(document.documentElement).getPropert
   s+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="'+amber+'" stroke-width="2.5" stroke-linejoin="round"/>';
   s+='</svg>';
   document.getElementById('stepsChart').innerHTML=s;
+})();
+
+// ---- Weight line chart (points on reading days only) ----
+(function(){
+  var W=720,H=220,padL=40,padB=26,padT=14,padR=10;
+  var lo=255, hi=263, n=weightData.length;
+  var iw=W-padL-padR, ih=H-padT-padB;
+  var green=cssVar('--green'), grid=cssVar('--chart-grid'), muted=cssVar('--muted'), ink=cssVar('--ink');
+  function X(i){ return padL+(i+0.5)*(iw/n); }
+  function Y(v){ return padT+ih-((v-lo)/(hi-lo))*ih; }
+  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Daily weight readings line chart">';
+  for(var g=256; g<=262; g+=2){
+    var y=Y(g);
+    s+='<line x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'" stroke="'+grid+'" stroke-width="1"/>';
+    s+='<text x="'+(padL-6)+'" y="'+(y+4)+'" text-anchor="end" font-size="11" fill="'+muted+'">'+g+'</text>';
+  }
+  var seg=[], segs=[];
+  for(var i=0;i<n;i++){
+    if(weightData[i][1]===null){ if(seg.length){ segs.push(seg); seg=[]; } continue; }
+    seg.push(X(i).toFixed(1)+','+Y(weightData[i][1]).toFixed(1));
+  }
+  if(seg.length) segs.push(seg);
+  for(var k=0;k<segs.length;k++){
+    if(segs[k].length>1) s+='<polyline points="'+segs[k].join(' ')+'" fill="none" stroke="'+green+'" stroke-width="2.5" stroke-linejoin="round"/>';
+  }
+  for(var j=0;j<n;j++){
+    var v=weightData[j][1];
+    if(v!==null) s+='<circle cx="'+X(j)+'" cy="'+Y(v)+'" r="3.5" fill="'+green+'"><title>'+weightData[j][0]+': '+v.toFixed(1)+' lb</title></circle>';
+    if(j%5===0 || j===n-1) s+='<text x="'+X(j)+'" y="'+(H-8)+'" text-anchor="middle" font-size="10.5" fill="'+muted+'">'+weightData[j][0]+'</text>';
+  }
+  s+='<text x="'+X(n-1)+'" y="'+(Y(257.9)-10)+'" text-anchor="end" font-size="12" font-weight="600" fill="'+ink+'">257.9 lb (Nov 23)</text>';
+  s+='</svg>';
+  document.getElementById('weightChart').innerHTML=s;
 })();
 
 // ---- Generic small bar chart ----
